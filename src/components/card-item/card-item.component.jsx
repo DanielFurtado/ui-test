@@ -3,18 +3,17 @@ import './card-item.styles.scss';
 const CardItem = ({ image }) => {
   const { url, user } = image;
   return (
-    <div className='card-container'>
-      <div className='card'>
-        <div
-          className='background-image'
-          style={{
-            backgroundImage: `url(${url}.jpg)`,
-          }}
-        />
+    <div 
+      className='card-container'
+      style={{
+        backgroundImage: `url(${url}.jpg)`,
+      }}
+      >
         <div className='card-body-container'>
-          <p>Preview</p>
+          <div className='card-info'>
+            <p>{user.name}</p>
+          </div>
         </div>
-      </div>
     </div>
   );
 };
