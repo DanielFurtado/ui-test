@@ -1,0 +1,23 @@
+.card-container {
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,.08),0 0 0 1px rgba(0,0,0,.02);
+  display: flex;
+  flex: 1 1 auto;
+  height: 200px;
+  justify-content: center;
+  margin: 20px;
+  min-width: 30%;
+  overflow: hidden;
+
+  &:hover {
+    cursor: zoom-in;
+  }
+
+  .background-image {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
