@@ -1,6 +1,12 @@
 .gallery-container {
   width: 100%;
   display: flex;
+  justify-content: center;
+}
+
+.gallery-wrapper {
+  width: 1280px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
