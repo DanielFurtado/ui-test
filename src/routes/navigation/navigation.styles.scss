@@ -1,0 +1,13 @@
+.navigation {
+  height: 96px;
+  width: 100%;
+  display: flex;
+  background-color: #fef200;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .logo-container {
+    height: 100%;
+    padding: 25px;
+  }
+}
