@@ -1,10 +1,15 @@
 .navigation {
-  height: 96px;
-  width: 100%;
-  display: flex;
   background-color: #fef200;
-  justify-content: space-between;
+  display: flex;
+  height: 96px;
+  justify-content: center;
   margin-bottom: 25px;
+  width: 100%;
+
+  .nav-container {
+    display: flex;
+    width: 1280px;
+  }
 
   .logo-container {
     height: 100%;
@@ -12,10 +17,10 @@
   }
 
   .nav-links-container {
-    width: 50%;
-    height: 100%;
-    display: flex;
     align-items: center;
+    display: flex;
+    flex: 1;
+    height: 100%;
     justify-content: flex-end;
 
     .nav-link {

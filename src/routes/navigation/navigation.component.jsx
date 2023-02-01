@@ -9,16 +9,18 @@ const Navigation = () => {
   return (
     <Fragment>
       <div className='navigation'>
-        <Link className='logo-container' to='/'>
-          <MotorwayLogo className='logo' />
-        </Link>
-        <div className='nav-links-container'>
-          <Link className='nav-link' to='/'>
-            GALLERY
+        <div className='nav-container'>
+          <Link className='logo-container' to='/'>
+            <MotorwayLogo className='logo' />
           </Link>
-          <Link className='nav-link' to='/sign-up'>
-            SIGN UP
-          </Link>
+          <div className='nav-links-container'>
+            <Link className='nav-link' to='/'>
+              GALLERY
+            </Link>
+            <Link className='nav-link' to='/sign-up'>
+              SIGN UP
+            </Link>
+          </div>
         </div>
       </div>
       <Outlet />
