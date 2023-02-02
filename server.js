@@ -1,5 +1,3 @@
-'use strict';
-
 const app = require('express')();
 const images = require('./src/images.json');
 
