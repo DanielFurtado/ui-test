@@ -1,0 +1,74 @@
+.sign-up-container {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+}
+  
+.sign-up-heading {
+  padding: 20px;
+  width: 1280px;
+}
+
+.sign-up-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.sign-up-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly  ;
+  padding: 20px;
+  width: 500px;
+
+  .form-group {
+    .color-picker {
+      border: 0;
+      border-radius: 8px;
+      height: 40px;
+      margin: 10px 0;
+      width: 40px;
+      width: 100%;
+    }
+  }
+
+  input[type='date'],
+  input[type='email'],
+  input[type='range'],
+  input[type='text'] {
+    background: #f3f3f3;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 6px 10px;
+    font-size: 16px;
+    width: 100%;
+
+    &:focus {
+      border: 2px solid #0460cc;
+      outline: none;
+    }
+  }
+}
+
+.button-primary {
+  background-color: #0460cc;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.error {
+  color: red;
+  margin-bottom: 20px;
+}
