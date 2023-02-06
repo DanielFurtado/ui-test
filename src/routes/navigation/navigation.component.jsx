@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
-import { Outlet, Link } from 'react-router-dom';
-
+import { Outlet, NavLink } from 'react-router-dom';
 import { ReactComponent as MotorwayLogo } from '../../assets/motorway-logo.svg';
 
 import './navigation.styles.scss';
@@ -8,21 +7,25 @@ import './navigation.styles.scss';
 const Navigation = () => {
   return (
     <Fragment>
-      <div className='navigation'>
-        <div className='nav-container'>
-          <Link className='logo-container' to='/'>
+      <header className='navigation'>
+        <nav className='nav-container'>
+          <NavLink className='logo-container' to='/'>
             <MotorwayLogo className='logo' />
-          </Link>
-          <div className='nav-links-container'>
-            <Link className='nav-link' to='/'>
-              GALLERY
-            </Link>
-            <Link className='nav-link' to='/sign-up'>
-              SIGN UP
-            </Link>
-          </div>
-        </div>
-      </div>
+          </NavLink>
+            <ul className='nav-links-container'>
+              <li>
+                <NavLink to='/' className='nav-link'>
+                  Gallery
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to='/sign-up' className='nav-link' >
+                  Sign up
+                </NavLink>
+              </li>
+            </ul>
+        </nav>
+      </header>
       <Outlet />
     </Fragment>
   );
