@@ -1,0 +1,296 @@
+.card-modal-backdrop {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.card-modal {
+  background-color: white;
+  border-radius: 8px;
+  margin: 0 20px;
+  z-index: 4;
+}
+
+.card-modal-header {
+  display: flex;
+  padding: 20px 20px 0;
+}
+
+.card-modal-image-wrapper {
+  max-height: 70%;
+  max-width: 70%;
+}
+
+.card-modal-image {
+  max-height: 562px;
+}
+
+.card-modal-title {
+  margin: 0;
+}
+
+.card-modal-body {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+
+ .card-modal-info {
+    min-width: 300px;
+    padding: 0 0 0 20px;
+    width: 30%;
+  }
+  
+  .card-modal-profile-wrapper {
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgb(29 29 27 / 15%);
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    margin-top: 50px;
+  }
+
+  .card-modal-profile-image {
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    display: flex;
+    height: 30%;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .card-profile-image {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+
+  .card-profile-username {
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .card-modal-image-likes {
+    color: #0460cc;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .card-description {
+    margin-top: 20px;
+  }
+
+  .user-icon{
+    font-size:2em;  /* change font size should change size of icon */
+    float:left; margin:1em;  /* remove this line to avoid float/margin */
+  }
+  .user-icon{
+    font-size: 17px;
+    border-radius:4em; border:1px solid #0460cc;
+    height:6em; width:6em;  
+    background:none;padding:0.1em;  
+  }
+  
+  .user-icon::before{
+    content:" "; display:block;
+    height:2em; width:2em;
+    background:#0460cc;
+    position:relative; left:2em;top:0.8em;
+    border-radius:2em;
+  }
+  .user-icon::after{
+    content:" "; display:block;
+    height:2em;width:4em;
+    background:#0460cc;
+    position:relative; left:1em;top:1em;
+    border-radius:2em 2em 0 0;
+  }
+}
+
+// Display a cross with CSS only.
+//
+// $size  : px or em
+// $color : color
+// $thickness : px
+@mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: $size;
+  height: $size;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: ($size - $thickness) / 2;
+    left: 0;
+    right: 0;
+    height: $thickness;
+    background: $color;
+    border-radius: $thickness;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+
+  span {
+    display: block;
+  }
+
+}
+
+@mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+
+
+}
+
+.card-modal-close-btn {
+  align-items: center;
+  background: #eeeeee;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 30px;
+  justify-content: center;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  transition: all 150ms;
+  width: 30px;
+  
+  .icon-cross {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    position: relative;
+    width: 15px;
+    height: 15px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: (15px - 2px) / 2;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #000000;
+      border-radius: 2px;
+    }
+  
+    &:before {
+      transform: rotate(45deg);
+    }
+  
+    &:after {
+      transform: rotate(-45deg);
+    }
+  
+    span {
+      display: block;
+    } 
+  }
+  
+  &:hover,
+  &:focus {
+    transform: rotateZ(90deg);
+    background: #dddddd;
+  }
+}
+
+// For screen readers.
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.like-icon {
+  color: #0460cc;
+  height: auto;
+  margin-right: 5px;
+  width: 16px;
+}
+
+@media (max-width: 768px) {
+  .card-modal-backdrop {
+    display: unset;
+    overflow-y: auto;
+  }
+
+  .card-modal {
+    margin: 10px;
+  }
+  
+  .card-modal-body {
+    flex-direction: column;
+
+    .card-modal-info {
+      padding: 0px 0px 20px;
+      width: 100%;
+    }
+
+    .card-modal-profile-wrapper {
+      box-shadow: none;
+      height: unset;
+      margin-top: 20px;
+    }
+
+    .card-modal-profile-image {
+      align-items: flex-start;
+      background-color: white;
+      height: unset;
+    }
+
+    .card-profile-image {
+      height: 80px;
+      width: 80px;
+    }
+
+    .card-description {
+      margin-top: 10px;
+    }
+  }
+
+  .card-modal-image-wrapper {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .card-modal-image {
+    max-height: unset;
+  }
+}
