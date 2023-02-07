@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { useQuery } from 'react-query'
 import { Outlet } from 'react-router-dom';
 
+import Loading from '../../components/loading/loading.component';
 import ImageGallery from '../../components/image-gallery/image-gallery.component';
 import './gallery.styles.scss';
 
@@ -11,7 +12,7 @@ const Gallery = () => {
       .then(res => res.json())
   })
 
-  if (isLoading) return <h3 className='loading'>Loading<div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div></h3>
+  if (isLoading) return <Loading />
   if (error) return <h3 className='error-loading'>Error loading data!</h3>
   
   return (

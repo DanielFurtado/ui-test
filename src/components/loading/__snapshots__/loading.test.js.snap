@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<h3
+  className="loading"
+>
+  Loading
+  <div
+    className="lds-ellipsis"
+  >
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+</h3>
+`;
