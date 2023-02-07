@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useForm } from "react-hook-form";
-import { Outlet } from "react-router-dom";
+import { useForm } from 'react-hook-form';
+import { Outlet } from 'react-router-dom';
 
 import './sign-up.styles.scss';
 
@@ -62,7 +62,7 @@ const SignUp = () => {
                   required: 'Please enter your email.',
                   pattern: {
                     value: /\S+@\S+\.\S+/,
-                    message: "Entered value does not match email format."
+                    message: 'Entered value does not match email format.'
                   }
                 })}
                 aria-invalid={errors.email ? 'true' : 'false'}
@@ -109,12 +109,13 @@ const SignUp = () => {
               />
             </div>
             <div className='form-group'>
-              <label htmlFor='email'>Salary: £ {salary}</label>
+              <label htmlFor='email' data-testid='salary-value-display'>Salary: £ {salary}</label>
               <input
                 {...register('salary')}
                 type='range'
                 onChange={handleSalaryRangeChange}
                 id='salary'
+                data-testid='salary-range-input'
                 name='salary'
                 placeholder='Salary'
                 min='0'
@@ -123,7 +124,7 @@ const SignUp = () => {
                 value={salary}
               />
             </div>
-            <button className='button-primary'>Submit</button>
+            <button className='button-primary' data-testid="signup-submit-button">Submit</button>
           </form>
         </div>
       </div>

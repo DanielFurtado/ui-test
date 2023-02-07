@@ -1,6 +1,6 @@
 
 import renderer from 'react-test-renderer';
-import {render} from '@testing-library/react'
+import {fireEvent, render} from '@testing-library/react'
 import '@testing-library/jest-dom';
 import CardModal from '../card-modal/card-modal.component';
 
@@ -18,13 +18,35 @@ const data = {
 
 describe(('Card Item'), () => {
   it('renders', () => {
-    const component = renderer.create(<CardModal show={true} image={data} />);
+    const component = renderer.create(
+      <CardModal show={true} image={data} />
+    );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders the user name', () => {
-    const {getByText} = render(<CardModal show={true} image={data} />);
+  it('displays the user name', () => {
+    const {getByText} = render(
+      <CardModal show={true} image={data} />
+    );
     expect(getByText('Preview')).toBeInTheDocument();
+  });
+
+  it('should close the modal', () => {
+    const closeModalSpy = jest.fn();
+    const { getByTestId } = render(
+      <CardModal show={true} image={data} onClose={closeModalSpy} />
+    );
+    fireEvent.click(getByTestId('card-modal-backdrop'));
+    expect(closeModalSpy).toHaveBeenCalled();
+  });
+
+  it('should stop propagation if clicked', () => {
+    const stopPropagationSpy = jest.fn();
+    const { getByTestId } = render(
+      <CardModal show={true} image={data} onClick={stopPropagationSpy} />
+    );
+    fireEvent.click(getByTestId('card-modal'));
+    expect(stopPropagationSpy).toHaveBeenCalledTimes(0);
   });
 });

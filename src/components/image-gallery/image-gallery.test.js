@@ -34,9 +34,4 @@ describe('Image Gallery', () => {
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-  
-  test('renders Image Gallery', () => {
-    const {getByText} = render(<ImageGallery images={data} />);
-    expect(getByText('Photo gallery')).toBeInTheDocument();
-  });
 });

@@ -8,13 +8,21 @@ const CardModal = (props) => {
   }
   const { url, user, alt_description, description, likes } = props.image;
   return (
-    <div className='card-modal-backdrop' onClick={props.onClose}>
-      <div className='card-modal' onClick={e => e.stopPropagation()}>
+    <div 
+      onClick={props.onClose}
+      className='card-modal-backdrop' 
+      data-testid='card-modal-backdrop'
+    >
+      <div 
+        onClick={e => e.stopPropagation()}
+        className='card-modal' 
+        data-testid='card-modal'
+      >
         <div className='card-modal-header'>
           <h4 className='card-modal-title'>Preview</h4>
-          <button onClick={props.onClose} type="button" className="card-modal-close-btn">
-            <span className="icon-cross"></span>
-            <span className="visually-hidden">Close</span>
+          <button onClick={props.onClose} type='button' className='card-modal-close-btn'>
+            <span className='icon-cross'></span>
+            <span className='visually-hidden'>Close</span>
           </button>
         </div>
         <div className='card-modal-body'>

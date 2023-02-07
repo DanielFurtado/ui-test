@@ -100,12 +100,14 @@ exports[`Sign up component renders 1`] = `
           className="form-group"
         >
           <label
+            data-testid="salary-value-display"
             htmlFor="email"
           >
             Salary: £ 
             0
           </label>
           <input
+            data-testid="salary-range-input"
             id="salary"
             max="250000"
             min="0"
@@ -120,6 +122,7 @@ exports[`Sign up component renders 1`] = `
         </div>
         <button
           className="button-primary"
+          data-testid="signup-submit-button"
         >
           Submit
         </button>

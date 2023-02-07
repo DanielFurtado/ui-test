@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment } from 'react';
 import CardItem from '../card-item/card-item.component';
 
 import './image-gallery.styles.scss';
@@ -12,7 +12,7 @@ const ImageGallery = ({ images }) => {
           <p>Some of our clients have shared some of their amazing photographic work with us here at Motorway! 
           This is truly inspirational!</p>
         </div>
-        <div className="image-gallery-wrapper">
+        <div className='image-gallery-wrapper'>
           {images && images.map((image) => (
             <CardItem className='item' key={image.id} image={image} />
           ))}

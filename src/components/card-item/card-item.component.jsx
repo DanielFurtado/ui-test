@@ -10,21 +10,23 @@ const CardItem = ({ image }) => {
   return (
     <Fragment>
       <div 
-        onClick={() => setShow(true) }
+        onClick={() => setShow(true)}
         className='card-container'
-        style={{ 
-          backgroundImage: `url(${url}.jpg)` 
-        }}
         data-testid="card-container"
-        >
-          <div className='card-body-container'>
-            <div className='card-info shine'>
-              <p>{user.name}</p>
-              <span className="arrow-right"></span>
-            </div>
+        style={{backgroundImage: `url(${url}.jpg)`}}
+      >
+        <div className='card-body-container'>
+          <div className='card-info shine'>
+            <p>{user.name}</p>
+            <span className='arrow-right'></span>
           </div>
+        </div>
       </div>
-      <CardModal onClose={() => setShow(false)} image={image} show={show} />
+      <CardModal 
+        onClose={() => setShow(false)}
+        image={image} 
+        show={show} 
+      />
     </Fragment>
   );
 };

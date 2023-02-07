@@ -3,7 +3,7 @@ const DownloadButton = ({ url }) => {
     window.open(url, '_blank');
   }
   return (
-    <button onClick={downloadImage} className='button-primary' aria-label="Download">
+    <button onClick={downloadImage} className='button-primary' aria-label='Download'>
       Download
     </button>
   );

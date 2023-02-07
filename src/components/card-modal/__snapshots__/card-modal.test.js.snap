@@ -3,9 +3,11 @@
 exports[`Card Item renders 1`] = `
 <div
   className="card-modal-backdrop"
+  data-testid="card-modal-backdrop"
 >
   <div
     className="card-modal"
+    data-testid="card-modal"
     onClick={[Function]}
   >
     <div
