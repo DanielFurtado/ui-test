@@ -35,13 +35,14 @@ const SignUp = () => {
           <p>Join our mailing list and you'll be the first to hear about our latest updates, news, and special offers.</p>
         </div>
         <div className='sign-up-form-wrapper'>
-          <form onSubmit={handleSubmit(onSubmit)} noValidate>
+          <form onSubmit={handleSubmit(onSubmit)} noValidate arial-label='Sign up form'>
             <div className='form-group'>
               <label htmlFor='name'>Name *</label>
               <input 
                 {...register('name', { 
                   required: 'Please enter your name.' 
                 })}
+                aria-label='name'
                 aria-invalid={errors.name ? 'true' : 'false'}
                 type='text'
                 id='name'
@@ -65,6 +66,7 @@ const SignUp = () => {
                     message: 'Entered value does not match email format.'
                   }
                 })}
+                aria-label='email'
                 aria-invalid={errors.email ? 'true' : 'false'}
                 type='email'
                 id='email'
@@ -84,6 +86,7 @@ const SignUp = () => {
                 {...register('dob', { 
                   required: 'Please enter your date of birth.' 
                 })}
+                aria-label='date of birth'
                 aria-invalid={errors.dob ? 'true' : 'false'}
                 type='date'
                 id='dob'
@@ -104,6 +107,7 @@ const SignUp = () => {
                 type='color'
                 className='color-picker'
                 id='favoriteColour'
+                aria-label='favorite colour'
                 name='favoriteColour'
                 placeholder='Favorite Colour'
               />
@@ -116,6 +120,7 @@ const SignUp = () => {
                 onChange={handleSalaryRangeChange}
                 id='salary'
                 data-testid='salary-range-input'
+                aria-label='salary'
                 name='salary'
                 placeholder='Salary'
                 min='0'
