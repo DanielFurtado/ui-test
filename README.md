@@ -24,7 +24,7 @@ This repo is a slightly modified Create React App and an Express server which se
 
 -  `npm run test` to run unit tests
 
--  `npm run test -- --coverage` to run tests and view unit test coverage  
+-  `npm run test -- --coverage` to run tests and vi ew unit test coverage  
 
 
 ## Notes:
@@ -47,8 +47,9 @@ CSS Pre-processor
 
 ## Further improvements (TODO):
 
-* Add styled components (CSS in JS)
 * Gallery pagination
+* Dropdown for number of images to load per page
 * Gallery layout grid
 * Add a footer
+* Add styled components (CSS in JS)
 * Additional unit test coverage
