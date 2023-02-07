@@ -21,6 +21,7 @@ exports[`Sign up component renders 1`] = `
       className="sign-up-form-wrapper"
     >
       <form
+        arial-label="Sign up form"
         noValidate={true}
         onSubmit={[Function]}
       >
@@ -34,6 +35,7 @@ exports[`Sign up component renders 1`] = `
           </label>
           <input
             aria-invalid="false"
+            aria-label="name"
             id="name"
             name="name"
             onBlur={[Function]}
@@ -52,6 +54,7 @@ exports[`Sign up component renders 1`] = `
           </label>
           <input
             aria-invalid="false"
+            aria-label="email"
             id="email"
             name="email"
             onBlur={[Function]}
@@ -70,6 +73,7 @@ exports[`Sign up component renders 1`] = `
           </label>
           <input
             aria-invalid="false"
+            aria-label="date of birth"
             id="dob"
             name="dob"
             onBlur={[Function]}
@@ -87,6 +91,7 @@ exports[`Sign up component renders 1`] = `
             Select your favourite color:
           </label>
           <input
+            aria-label="favorite colour"
             className="color-picker"
             id="favoriteColour"
             name="favoriteColour"
@@ -107,6 +112,7 @@ exports[`Sign up component renders 1`] = `
             0
           </label>
           <input
+            aria-label="salary"
             data-testid="salary-range-input"
             id="salary"
             max="250000"

@@ -3,6 +3,7 @@
 exports[`Navigation renders 1`] = `
 <header
   className="navigation"
+  role="banner"
 >
   <nav
     className="nav-container"
@@ -21,22 +22,29 @@ exports[`Navigation renders 1`] = `
     </a>
     <ul
       className="nav-links-container"
+      role="menubar"
     >
-      <li>
+      <li
+        role="none"
+      >
         <a
           aria-current="page"
           className="nav-link active"
           href="/"
           onClick={[Function]}
+          role="menuitem"
         >
           Gallery
         </a>
       </li>
-      <li>
+      <li
+        role="none"
+      >
         <a
           className="nav-link"
           href="/sign-up"
           onClick={[Function]}
+          role="menuitem"
         >
           Sign up
         </a>
