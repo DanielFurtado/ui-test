@@ -11,7 +11,7 @@ const Gallery = () => {
       .then(res => res.json())
   })
 
-  if (isLoading) return <h3 className='loading'>Loading...</h3>
+  if (isLoading) return <h3 className='loading'>Loading<div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div></h3>
   if (error) return <h3 className='error-loading'>Error loading data!</h3>
   
   return (

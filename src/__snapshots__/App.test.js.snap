@@ -48,7 +48,15 @@ Array [
   <h3
     className="loading"
   >
-    Loading...
+    Loading
+    <div
+      className="lds-ellipsis"
+    >
+      <div />
+      <div />
+      <div />
+      <div />
+    </div>
   </h3>,
 ]
 `;
