@@ -1,10 +1,11 @@
 .card-modal-backdrop {
-  align-items: center;
+  align-items: baseline;
   background-color: rgba(0, 0, 0, 0.5);
   bottom: 0;
   display: flex;
   justify-content: center;
   left: 0;
+  overflow: auto;
   position: fixed;
   right: 0;
   top: 0;
@@ -14,7 +15,7 @@
 .card-modal {
   background-color: white;
   border-radius: 8px;
-  margin: 0 20px;
+  margin: 20px;
   z-index: 4;
 }
 
