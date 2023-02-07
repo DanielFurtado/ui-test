@@ -1,9 +1,13 @@
-import React from 'react';
-import { render } from '@testing-library/react';
+import {BrowserRouter as Router} from 'react-router-dom';
+import renderer from 'react-test-renderer';
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+it('renders', () => {
+  const component = renderer.create(
+    <Router>
+      <App />
+    </Router>
+  );
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });

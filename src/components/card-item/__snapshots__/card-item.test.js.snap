@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Item matches the snapshot 1`] = `
+<div
+  className="card-container"
+  data-testid="card-container"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundImage": "url(undefined.jpg)",
+    }
+  }
+>
+  <div
+    className="card-body-container"
+  >
+    <div
+      className="card-info shine"
+    >
+      <p>
+        Daniel
+      </p>
+      <span
+        className="arrow-right"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image Gallery renders 1`] = `
+<div
+  className="image-gallery-container"
+>
+  <div
+    className="image-gallery-heading"
+  >
+    <h1>
+      Photo gallery
+    </h1>
+    <p>
+      Some of our clients have shared some of their amazing photographic work with us here at Motorway! This is truly inspirational!
+    </p>
+  </div>
+  <div
+    className="image-gallery-wrapper"
+  >
+    <div
+      className="card-container"
+      data-testid="card-container"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url(https://www.some-link/images/some-image-1.jpg)",
+        }
+      }
+    >
+      <div
+        className="card-body-container"
+      >
+        <div
+          className="card-info shine"
+        >
+          <p>
+            Fred Mercury
+          </p>
+          <span
+            className="arrow-right"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="card-container"
+      data-testid="card-container"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url(https://www.some-link/images/url-image-2.jpg)",
+        }
+      }
+    >
+      <div
+        className="card-body-container"
+      >
+        <div
+          className="card-info shine"
+        >
+          <p>
+            David Bowie
+          </p>
+          <span
+            className="arrow-right"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

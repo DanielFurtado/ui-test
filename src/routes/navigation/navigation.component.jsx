@@ -12,18 +12,18 @@ const Navigation = () => {
           <NavLink className='logo-container' to='/'>
             <MotorwayLogo className='logo' />
           </NavLink>
-            <ul className='nav-links-container'>
-              <li>
-                <NavLink to='/' className='nav-link'>
-                  Gallery
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to='/sign-up' className='nav-link' >
-                  Sign up
-                </NavLink>
-              </li>
-            </ul>
+          <ul className='nav-links-container'>
+            <li>
+              <NavLink to='/' className='nav-link'>
+                Gallery
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to='/sign-up' className='nav-link' >
+                Sign up
+              </NavLink>
+            </li>
+          </ul>
         </nav>
       </header>
       <Outlet />

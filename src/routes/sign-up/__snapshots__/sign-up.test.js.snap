@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sign up component renders 1`] = `
+<div
+  className="sign-up-container"
+>
+  <div
+    className="sign-up-wrapper"
+  >
+    <div
+      className="sign-up-heading"
+    >
+      <h1>
+        Sign up to our newsletter
+      </h1>
+      <p>
+        Join our mailing list and you'll be the first to hear about our latest updates, news, and special offers.
+      </p>
+    </div>
+    <div
+      className="sign-up-form-wrapper"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="name"
+          >
+            Name *
+          </label>
+          <input
+            aria-invalid="false"
+            id="name"
+            name="name"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Name"
+            type="text"
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="email"
+          >
+            Email *
+          </label>
+          <input
+            aria-invalid="false"
+            id="email"
+            name="email"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Email"
+            type="email"
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="dob"
+          >
+            Date of Birth *
+          </label>
+          <input
+            aria-invalid="false"
+            id="dob"
+            name="dob"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Date of Birth"
+            type="date"
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="email"
+          >
+            Select your favourite color:
+          </label>
+          <input
+            className="color-picker"
+            id="favoriteColour"
+            name="favoriteColour"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Favorite Colour"
+            type="color"
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <label
+            htmlFor="email"
+          >
+            Salary: £ 
+            0
+          </label>
+          <input
+            id="salary"
+            max="250000"
+            min="0"
+            name="salary"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Salary"
+            step="1000"
+            type="range"
+            value={0}
+          />
+        </div>
+        <button
+          className="button-primary"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

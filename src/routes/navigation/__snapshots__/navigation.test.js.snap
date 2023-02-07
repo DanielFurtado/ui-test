@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation renders 1`] = `
+<header
+  className="navigation"
+>
+  <nav
+    className="nav-container"
+  >
+    <a
+      aria-current="page"
+      className="logo-container active"
+      href="/"
+      onClick={[Function]}
+    >
+      <svg
+        className="logo"
+      >
+        motorway-logo.svg
+      </svg>
+    </a>
+    <ul
+      className="nav-links-container"
+    >
+      <li>
+        <a
+          aria-current="page"
+          className="nav-link active"
+          href="/"
+          onClick={[Function]}
+        >
+          Gallery
+        </a>
+      </li>
+      <li>
+        <a
+          className="nav-link"
+          href="/sign-up"
+          onClick={[Function]}
+        >
+          Sign up
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<div
+  className="image-gallery-container"
+>
+  <div
+    className="image-gallery-heading"
+  >
+    <h1>
+      Photo gallery
+    </h1>
+    <p>
+      Some of our clients have shared some of their amazing photographic work with us here at Motorway! This is truly inspirational!
+    </p>
+  </div>
+  <div
+    className="image-gallery-wrapper"
+  />
+</div>
+`;
