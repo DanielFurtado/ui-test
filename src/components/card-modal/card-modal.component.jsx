@@ -19,7 +19,12 @@ const CardModal = (props) => {
         </div>
         <div className='card-modal-body'>
           <div className='card-modal-image-wrapper'>
-            <img src={ `${url}.jpg`} alt={alt_description} className='card-modal-image' />
+            <img 
+              src={ `${url}.jpg`} 
+              alt={alt_description} 
+              className='card-modal-image' 
+              loading='lazy'
+            />
             <div className='card-modal-image-likes'>
               <span>
                 <LikeIcon className='like-icon' />
@@ -34,6 +39,7 @@ const CardModal = (props) => {
                   src={ `${user.profile_image}.webp`}
                   alt={user.username} 
                   className='card-profile-image'
+                  loading='lazy'
                 />
                 <div className='card-profile-username'>{user.name}</div>
               </div>
