@@ -35,14 +35,17 @@ const SignUp = () => {
           <p>Join our mailing list and you'll be the first to hear about our latest updates, news, and special offers.</p>
         </div>
         <div className='sign-up-form-wrapper'>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(onSubmit)} noValidate>
             <div className='form-group'>
               <label htmlFor='name'>Name *</label>
               <input 
-                {...register('name', { required: 'Please enter your name.' })}
+                {...register('name', { 
+                  required: 'Please enter your name.' 
+                })}
                 aria-invalid={errors.name ? 'true' : 'false'}
                 type='text'
                 id='name'
+                className={errors.name && 'input-error'}
                 name='name'
                 placeholder='Name'
               />
@@ -55,14 +58,21 @@ const SignUp = () => {
             <div className='form-group'>
               <label htmlFor='email'>Email *</label>
               <input 
-                {...register('email', { required: 'Please enter your email.' })}
+                {...register('email', { 
+                  required: 'Please enter your email.',
+                  pattern: {
+                    value: /\S+@\S+\.\S+/,
+                    message: "Entered value does not match email format."
+                  }
+                })}
                 aria-invalid={errors.email ? 'true' : 'false'}
                 type='email'
                 id='email'
+                className={errors.email && 'input-error'}
                 name='email'
                 placeholder='Email'
               />
-              {errors.email?.type === 'required' && 
+              {errors.email && 
                 <p className='error' role='alert'>
                   {errors.email?.message}
                 </p>
@@ -71,10 +81,13 @@ const SignUp = () => {
             <div className='form-group'>
               <label htmlFor='dob'>Date of Birth *</label>
               <input 
-                {...register('dob', { required: 'Please enter your date of birth' })}
+                {...register('dob', { 
+                  required: 'Please enter your date of birth.' 
+                })}
                 aria-invalid={errors.dob ? 'true' : 'false'}
                 type='date'
                 id='dob'
+                className={errors.dob && 'input-error'}
                 name='dob'
                 placeholder='Date of Birth'
               />
@@ -85,7 +98,7 @@ const SignUp = () => {
               }
             </div>
             <div className='form-group'>
-              <label htmlFor='email'>Pick your favourite color:</label>
+              <label htmlFor='email'>Select your favourite color:</label>
               <input 
                 {...register('favoriteColour')}
                 type='color'
