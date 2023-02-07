@@ -58,3 +58,14 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .navigation {
+    height: 66px;
+
+    .logo-container {
+      height: 100%;
+      padding: 10px 20px;
+    }
+  }
+}

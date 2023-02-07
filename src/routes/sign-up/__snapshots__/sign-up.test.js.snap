@@ -21,6 +21,7 @@ exports[`Sign up component renders 1`] = `
       className="sign-up-form-wrapper"
     >
       <form
+        noValidate={true}
         onSubmit={[Function]}
       >
         <div

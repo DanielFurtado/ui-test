@@ -1,6 +1,6 @@
 
-import userEvent from '@testing-library/user-event';
-import {render, screen} from '@testing-library/react'
+import renderer from 'react-test-renderer';
+import {render} from '@testing-library/react'
 import '@testing-library/jest-dom';
 import CardModal from '../card-modal/card-modal.component';
 
@@ -17,15 +17,14 @@ const data = {
 };
 
 describe(('Card Item'), () => {
+  it('renders', () => {
+    const component = renderer.create(<CardModal show={true} image={data} />);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
   it('renders the user name', () => {
     const {getByText} = render(<CardModal show={true} image={data} />);
     expect(getByText('Preview')).toBeInTheDocument();
   });
-  
-//   it('handles click correctly', async () => {
-//     const {getByText} = render(<CardItem image={data} />);
-//     const user = userEvent.setup();  
-//     await user.click(screen.getByTestId('card-container'));
-//     expect(getByText('Preview')).toBeInTheDocument();
-//   });
 });

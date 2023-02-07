@@ -28,7 +28,7 @@ const data = [
   },
 ];
 
-describe('Image Gallery', ()=> {
+describe('Image Gallery', () => {
   it('renders', () => {
     const component = renderer.create(<ImageGallery images={data} />);
     let tree = component.toJSON();

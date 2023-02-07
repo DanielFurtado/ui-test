@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Item renders 1`] = `
+<div
+  className="card-modal-backdrop"
+>
+  <div
+    className="card-modal"
+    onClick={[Function]}
+  >
+    <div
+      className="card-modal-header"
+    >
+      <h4
+        className="card-modal-title"
+      >
+        Preview
+      </h4>
+      <button
+        className="card-modal-close-btn"
+        type="button"
+      >
+        <span
+          className="icon-cross"
+        />
+        <span
+          className="visually-hidden"
+        >
+          Close
+        </span>
+      </button>
+    </div>
+    <div
+      className="card-modal-body"
+    >
+      <div
+        className="card-modal-image-wrapper"
+      >
+        <img
+          alt="alternative description"
+          className="card-modal-image"
+          src="https://www.some-link/images/some-image-1.jpg"
+        />
+        <div
+          className="card-modal-image-likes"
+        >
+          <span>
+            <svg
+              className="like-icon"
+            >
+              like.svg
+            </svg>
+          </span>
+          10
+        </div>
+      </div>
+      <div
+        className="card-modal-info"
+      >
+        <div
+          className="card-modal-profile-wrapper"
+        >
+          <div
+            className="card-modal-profile-image"
+          >
+            <img
+              className="card-profile-image"
+              src="https://www.some-link/images/profile-image-1.webp"
+            />
+            <div
+              className="card-profile-username"
+            >
+              Fred Mercury
+            </div>
+          </div>
+        </div>
+        <div
+          className="card-description"
+        >
+          some description.
+        </div>
+        <button
+          aria-label="Download"
+          className="button-primary"
+          onClick={[Function]}
+        >
+          Download
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
