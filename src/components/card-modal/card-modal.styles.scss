@@ -90,32 +90,6 @@
   .card-description {
     margin-top: 20px;
   }
-
-  .user-icon{
-    font-size:2em;  /* change font size should change size of icon */
-    float:left; margin:1em;  /* remove this line to avoid float/margin */
-  }
-  .user-icon{
-    font-size: 17px;
-    border-radius:4em; border:1px solid #0460cc;
-    height:6em; width:6em;  
-    background:none;padding:0.1em;  
-  }
-  
-  .user-icon::before{
-    content:" "; display:block;
-    height:2em; width:2em;
-    background:#0460cc;
-    position:relative; left:2em;top:0.8em;
-    border-radius:2em;
-  }
-  .user-icon::after{
-    content:" "; display:block;
-    height:2em;width:4em;
-    background:#0460cc;
-    position:relative; left:1em;top:1em;
-    border-radius:2em 2em 0 0;
-  }
 }
 
 // Display a cross with CSS only.
@@ -166,8 +140,6 @@
   position: relative;
   width: 20px;
   height: 20px;
-
-
 }
 
 .card-modal-close-btn {
