@@ -37,6 +37,7 @@
       padding: 10px 0px;
       position: relative;
       text-decoration: none;
+      white-space: nowrap;
     }
     
     .nav-link::after {
@@ -65,7 +66,11 @@
 
     .logo-container {
       height: 100%;
-      padding: 10px 20px;
+      padding: 10px 0px 10px 20px;
+    }
+
+    .logo {
+      width: 80%;
     }
   }
 }

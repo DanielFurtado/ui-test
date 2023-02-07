@@ -233,10 +233,12 @@
 
     .card-modal-info {
       padding: 0px 0px 20px;
+      min-width: 100%;
       width: 100%;
     }
 
     .card-modal-profile-wrapper {
+      background-color: unset;
       box-shadow: none;
       height: unset;
       margin-top: 20px;
@@ -244,7 +246,7 @@
 
     .card-modal-profile-image {
       align-items: flex-start;
-      background-color: white;
+      background-color: unset;
       height: unset;
     }
 
