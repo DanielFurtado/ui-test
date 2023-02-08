@@ -8,7 +8,7 @@ import './gallery.styles.scss';
 
 const Gallery = () => {
   const { isLoading, error, data } = useQuery('data', async () => {
-    return fetch('images?limit=10')
+    return fetch('images')
       .then(res => res.json())
   })
 

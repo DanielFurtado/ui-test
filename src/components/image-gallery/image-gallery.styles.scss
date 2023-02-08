@@ -17,5 +17,46 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 10px;
+  margin: 20px 10px;
+}
+
+.pagination {
+  display: flex;
+  margin: 20px 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  color: #0460cc;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  padding: 0.375rem 0.75rem;
+
+  &:hover {
+    color: #0460cc;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }
+}
+
+.page-item {
+  &.active .page-link {
+    color: #fff;
+    cursor: default;
+    background-color: #0460cc;
+    border-color: #0460cc;
+  }
+
+  &.disabled .page-link {
+    color: #6c757d;
+    cursor: default;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #dee2e6;
+  }
 }
