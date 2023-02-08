@@ -17,8 +17,8 @@ const Items = ({ currentItems }) => {
 const PaginatedItems = ({ images, itemsPerPage }) => {
   const [itemOffset, setItemOffset] = useState(0);
   const endOffset = itemOffset + itemsPerPage;
-  const currentItems = images.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(images.length / itemsPerPage);
+  const currentItems = images?.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(images?.length / itemsPerPage);
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % images.length;
