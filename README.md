@@ -31,7 +31,7 @@ This repo is a slightly modified Create React App and an Express server which se
 
 Browser of choice for testing: **Chrome**
 
-**Installed packages:**
+**Additional packages installed:**
 
 react-hook-form: https://react-hook-form.com/ 
 Simple React Forms validation
