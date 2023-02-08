@@ -42,14 +42,17 @@ Used to cache fetched data
 react-router-dom: https://reactrouter.com/en/main 
 For client side routing
 
+react-paginate: https://www.npmjs.com/package/react-paginate
+Component to render pagination
+
 sass: https://sass-lang.com/ 
 CSS Pre-processor
 
 ## Further improvements (TODO):
 
-* Gallery pagination
+* Gallery pagination improvements
 * Dropdown for number of images to load per page
-* Gallery layout grid
+* Gallery layout grid / Skeleton loader
 * Add a footer
 * Add styled components (CSS in JS)
 * Additional unit test coverage
