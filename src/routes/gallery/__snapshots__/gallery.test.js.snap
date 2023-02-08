@@ -16,6 +16,45 @@ exports[`renders 1`] = `
   </div>
   <div
     className="image-gallery-wrapper"
-  />
+  >
+    <ul
+      aria-label="Pagination"
+      className="pagination"
+      role="navigation"
+    >
+      <li
+        className="page-item disabled"
+      >
+        <a
+          aria-disabled="true"
+          aria-label="Previous page"
+          className="page-link "
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          rel="prev"
+          role="button"
+          tabIndex="-1"
+        >
+          &lt;
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          aria-disabled="false"
+          aria-label="Next page"
+          className="page-link"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          rel="next"
+          role="button"
+          tabIndex="0"
+        >
+          &gt;
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 `;

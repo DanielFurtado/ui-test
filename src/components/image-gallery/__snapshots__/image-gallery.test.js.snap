@@ -67,6 +67,60 @@ exports[`Image Gallery renders 1`] = `
         </div>
       </div>
     </div>
+    <ul
+      aria-label="Pagination"
+      className="pagination"
+      role="navigation"
+    >
+      <li
+        className="page-item disabled"
+      >
+        <a
+          aria-disabled="true"
+          aria-label="Previous page"
+          className="page-link "
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          rel="prev"
+          role="button"
+          tabIndex="-1"
+        >
+          &lt;
+        </a>
+      </li>
+      <li
+        className="page-item active"
+      >
+        <a
+          aria-current="page"
+          aria-label="Page 1 is your current page"
+          className="page-link"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          rel="canonical"
+          role="button"
+          tabIndex="-1"
+        >
+          1
+        </a>
+      </li>
+      <li
+        className="page-item disabled"
+      >
+        <a
+          aria-disabled="true"
+          aria-label="Next page"
+          className="page-link "
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          rel="next"
+          role="button"
+          tabIndex="-1"
+        >
+          &gt;
+        </a>
+      </li>
+    </ul>
   </div>
 </div>
 `;
