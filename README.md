@@ -1,8 +1,7 @@
 
 # UI Test
 
-This App is based from Motorway UI technical test
-https://github.com/motorway/motorway-ui-test
+This App is based from a UI technical test
 
 This test focuses on user experience, and skills with HTML, CSS, a11y and leveraging browser APIs.
 
