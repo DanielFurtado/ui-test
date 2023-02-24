@@ -1,5 +1,5 @@
 
-# Motorway UI Test
+# UI Test
 
 This App is based from Motorway UI technical test
 https://github.com/motorway/motorway-ui-test
